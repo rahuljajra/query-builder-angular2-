@@ -1,0 +1,147 @@
+.p-10{padding: 10px;}
+.p-15{padding: 15px;}
+.p-20{padding: 20px}
+.m-10{margin: 10px;}
+.m-15{margin: 15px;}
+.m-20{margin: 20px}
+.mb-10{margin-bottom: 10px;}
+div.left-field-wrap > div {
+    border: 1px solid #56575F;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+.query-builder,.builder-wrapper{padding: 0 30px;}
+.mlr-10{margin-left: 10px; margin-right: 10px;}
+.search-area > div{ border: 1px solid #3C3C47; background: #3C3C47; border-radius: 4px;}
+.search-area > div > input{ border: medium none; margin-bottom: 0; text-align: center; width: calc(100% - 5rem); background: #3C3C47; height: 45px;}
+.search-area > div > i{text-align: right;}
+.field-wrapper{background: #252732; padding: 0 30px;}
+h6{color: #337690;}
+h5{color: #159ED1; font-size: 18px; margin-bottom: 0;}
+p{color: #5E5F68;}
+div{color: #818389;}
+body{background-color: #1A1A22;}
+h5.query-output {
+    color: #fff;
+}
+.material-icons{vertical-align: middle;}
+div > span {
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0px 10px;
+    position: relative;
+    top: 3px;
+}
+.collection .collection-item.active, .grp-btn {
+    background-color: #253F50;
+    color: #2D6E88;
+}
+select{
+    display: block;
+    float: right;
+    width: 40px;
+    height: 1.8rem;
+    background: transparent;
+    color: #636368;
+    border: medium none;
+   padding: 0;
+   margin-right: 5px;
+}
+select:focus { outline: none;}
+.operator-button {text-align: center;}
+.operator-button > button {
+    padding: 10px 20px;
+    background: transparent;
+    margin: 5px;
+    border-radius: 15px;
+    color: #fff;
+    border: 1px solid #56575F;
+    font-weight: 600;
+}
+.operator-button > button.active{
+    background: #A3E15F;
+    color: #2a3029;
+    border-color: #A3E15F;
+}
+.left-field-wrap.right-area > div{ display: inline-block;
+    margin: 20px;
+    text-align: left;}
+.left-field-wrap .input-field {
+    width: 200px;
+    padding: 0;
+   }
+.grp-btn,.inner-btn{font-size: 14px; font-weight: bold;}
+.collection .collection-item{border-bottom: medium none;}
+.collection{border-color: #243F50; margin-top: 0; border-width: 0.1rem;}
+.collection.inner-section{border-color: #1F5B3F; margin-top: 15px; border-width: 0.1rem;}
+a.collection-item.active { padding: 10px 8px;}
+.collection.inner-section .collection-item.active, .inner-btn {
+    background-color: #1F5B3F;
+    color: #219457;
+}
+.done{text-transform: capitalize;}
+.cancel{background: #48484E; text-transform: capitalize;}
+.done, .done > i{color: #204F68;}
+.add-inner-btn{background: #099D49; color: #1E362B; text-transform: capitalize; font-weight: 600; font-size: 14px; letter-spacing: 0.6px;}
+.add-group-btn {background: #3899BC; color: #264557; text-transform: capitalize; font-weight: 600; font-size: 14px; letter-spacing: 0.6px;}
+.add-inner-btn span > i{color: #1E362B !important;}
+.add-group-btn span > i{color: #264557 !important;}
+.left-field-wrap.right-area {
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+}
+.right-feild-value{background: #313139; color: #86868B; border-color: #313139 !important;}
+div.right-field-area, .right-feild-value  {
+    width: 250px;
+    text-align: left;
+}
+.done,.cancel{padding: 0 30px; height: 50px; font-weight: bold; letter-spacing: 0.7px;}
+.operator {
+    display: inline-block;
+    width: 76%;
+    background: #313139;
+    padding: 5px 15px;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+.query-build-wrap{margin-bottom: 0;}
+.fixed-builder{position: fixed; left: 0; height: 100vh;}
+.builder-wrapper{margin-left: 25% !important;}
+/* in-flight clone */
+.gu-mirror {
+  position: fixed !important;
+  margin: 0 !important;
+  z-index: 9999 !important;
+  opacity: 0.8;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: alpha(opacity=80);
+  pointer-events: none;
+}
+/* high-performance display:none; helper */
+.gu-hide {
+  left: -9999px !important;
+}
+/* added to mirrorContainer (default = body) while dragging */
+.gu-unselectable {
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+/* added to the source element while its mirror is dragged */
+.gu-transit {
+  opacity: 0.2;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+  filter: alpha(opacity=20);
+}
+div#left > div, #right {
+    cursor: move; /* fallback if grab cursor is unsupported */
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
+}
+.inner-section-wrap.operator-inner:nth-last-child(2) .operator-button {
+    display: none;
+}

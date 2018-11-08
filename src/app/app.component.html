@@ -1,0 +1,84 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="row">
+   <div class="col s3 query-builder fixed-builder">
+      <h5><span><</span> <span>></span> Query Builder</h5>
+   </div>
+   <div class="col s9 builder-wrapper">
+     <h5 class="query-output">destinationPID = '31350' AND bytes>='394' <i class="grey-text material-icons prefix">open_in_new</i>
+      </h5>
+   </div>
+</div>
+<div class="row query-build-wrap">
+    <div class="col s3 field-wrapper fixed-builder">
+      <div class="fields-area">
+            <h6>Fields</h6>
+            <p>Drag and drop to the inner field area</p>
+      </div>
+     <div class="search-area">
+        <div class="input-field">
+            <i class="grey-text material-icons prefix">search</i>
+            <input type="text" placeholder="search" id="autocomplete-input" class="autocomplete align-center">
+            </div>
+     </div>
+      <div class='left-field-wrap' *ngFor="let field of Innerfeild" dragula="COPYABLE" id="left">
+        <div>
+          <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+          <path fill="#888E98" fill-rule="nonzero" d="M2.703 12.906a.502.502 0 0 0 .344.156c.125 0 .25-.062.344-.156.187-.187.187-.5 0-.719L1.703 10.5H6.36v2.594c0 .281.22.5.5.5h2.594v4.656l-1.656-1.688c-.188-.187-.5-.187-.719 0-.187.188-.187.5 0 .72l2.563 2.562a.502.502 0 0 0 .343.156c.125 0 .25-.063.344-.156l2.563-2.563c.187-.187.187-.5 0-.718-.188-.188-.5-.188-.72 0l-1.687 1.687v-4.656h2.594c.281 0 .5-.219.5-.5V10.5h4.656l-1.687 1.688c-.188.187-.188.5 0 .718a.502.502 0 0 0 .344.156c.125 0 .25-.062.343-.156l2.563-2.562a.502.502 0 0 0 .156-.344.502.502 0 0 0-.156-.344l-2.563-2.562c-.187-.188-.5-.188-.718 0-.188.187-.188.5 0 .718L18.203 9.5h-4.625V6.906c0-.281-.219-.5-.5-.5h-2.594V1.72l1.688 1.718a.502.502 0 0 0 .344.157c.125 0 .25-.063.343-.156.188-.188.188-.5 0-.72L10.297.157A.502.502 0 0 0 9.953 0a.502.502 0 0 0-.344.156L7.047 2.72c-.188.187-.188.5 0 .719.187.187.5.187.719 0L9.453 1.75v4.656H6.86c-.28 0-.5.219-.5.5V9.5H1.703l1.719-1.688c.187-.187.187-.5 0-.718-.188-.188-.5-.188-.719 0L.141 9.656c-.188.188-.188.5 0 .719l2.562 2.531zm4.688-5.5h5.218v5.219H7.391V7.406z"></path>
+          </svg></span>{{field}}
+        </div>
+      </div>
+    </div>
+    <div class="col s9 builder-wrapper">
+        <div class="collection">
+            <a href="#!" class="collection-item active">Group <i class="grp-btn lighten-2 material-icons suffix right">clear</i></a>
+          <div class="inner-section-wrap operator-inner" *ngFor="let inner of Itemvalue">
+            <div class="collection inner-section mlr-10">
+              <a href="#!" class="collection-item active">Inner <i class="inner-btn lighten-2 material-icons suffix right">clear</i></a>
+                <div class="left-field-wrap right-area">
+                      <div class='right-field-area' dragula="COPYABLE" id="right">
+                          <div class="right-feild-area-wrap">
+                              
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <path fill="#888E98" fill-rule="nonzero" d="M2.703 12.906a.502.502 0 0 0 .344.156c.125 0 .25-.062.344-.156.187-.187.187-.5 0-.719L1.703 10.5H6.36v2.594c0 .281.22.5.5.5h2.594v4.656l-1.656-1.688c-.188-.187-.5-.187-.719 0-.187.188-.187.5 0 .72l2.563 2.562a.502.502 0 0 0 .343.156c.125 0 .25-.063.344-.156l2.563-2.563c.187-.187.187-.5 0-.718-.188-.188-.5-.188-.72 0l-1.687 1.687v-4.656h2.594c.281 0 .5-.219.5-.5V10.5h4.656l-1.687 1.688c-.188.187-.188.5 0 .718a.502.502 0 0 0 .344.156c.125 0 .25-.062.343-.156l2.563-2.562a.502.502 0 0 0 .156-.344.502.502 0 0 0-.156-.344l-2.563-2.562c-.187-.188-.5-.188-.718 0-.188.187-.188.5 0 .718L18.203 9.5h-4.625V6.906c0-.281-.219-.5-.5-.5h-2.594V1.72l1.688 1.718a.502.502 0 0 0 .344.157c.125 0 .25-.063.343-.156.188-.188.188-.5 0-.72L10.297.157A.502.502 0 0 0 9.953 0a.502.502 0 0 0-.344.156L7.047 2.72c-.188.187-.188.5 0 .719.187.187.5.187.719 0L9.453 1.75v4.656H6.86c-.28 0-.5.219-.5.5V9.5H1.703l1.719-1.688c.187-.187.187-.5 0-.718-.188-.188-.5-.188-.719 0L.141 9.656c-.188.188-.188.5 0 .719l2.562 2.531zm4.688-5.5h5.218v5.219H7.391V7.406z"></path>
+                        </svg></span> {{inner}}
+                      </div>
+                    </div>
+                  <div class="input-field">
+                      <div class="operator">Operator</div>
+                      <select>
+                        <option value="=" selected>=</option>
+                        <option value="=<">=<</option>
+                        <option value=">=">>=</option>
+                        <option value="++">==</option>
+                      </select>
+                    </div>
+                   <div class="right-feild-value">
+                      <span><svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16">
+                        <g fill="none" fill-rule="evenodd" stroke="#86868B" transform="translate(-1 -1)">
+                            <path d="M2.504 15.756l3.608-.792a1.83 1.83 0 0 0 .27-.07.354.354 0 0 0 .085-.047c.04-.03.08-.065.204-.19l9.908-9.907c.234-.234.291-.32.325-.431a.409.409 0 0 0 0-.245c-.034-.111-.091-.196-.325-.43L14.856 1.92c-.234-.234-.319-.291-.43-.325a.409.409 0 0 0-.245 0c-.112.034-.197.091-.43.325l-9.94 9.94c-.118.118-.15.153-.178.19a.347.347 0 0 0-.045.074 2.032 2.032 0 0 0-.081.246l-1.003 3.385z"></path>
+                            <rect width="11" height="0" x="4.5" y="8.5" rx=".5" transform="rotate(-45 10 8.5)"></rect>
+                        </g>
+                        </svg></span>31350
+                      </div>   
+                    </div>
+          </div>
+          <div class="operator-button">
+            <button class="active">AND</button>
+            <button>OR</button>
+          </div>
+        </div>
+            <button type="button" (click)="addInner()" class="waves-effect waves-light btn m-10 add-inner-btn"><span><i class="black-text lighten-2 material-icons prefix">add</i>
+            </span>Add Inner</button>
+          </div>
+          <button type="button" class="waves-effect waves-light btn m-10 add-group-btn"><span><i class="black-text lighten-2 material-icons prefix">add</i>
+          </span>Add group</button>
+          
+          <div class="right-align">
+            <button type="button" class="done waves-effect waves-light btn m-10"><span><i class="black-text lighten-2 material-icons prefix">done</i>
+            </span> Done</button>
+            <button type="button" class="cancel waves-effect waves-light btn m-10">Cancel</button>   
+          </div>      
+    </div>
+  </div>
+
+<router-outlet></router-outlet>
