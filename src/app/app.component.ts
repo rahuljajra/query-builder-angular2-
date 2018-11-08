@@ -20,8 +20,8 @@ export class AppComponent implements OnInit {
       accepts: ( el, target, source, _currentSibling) => {
         // To avoid dragging from right to left container
         return target.id !== 'left';
-      }
-      // removeOnSpill: true
+      },
+      removeOnSpill: true
     });
   }
   ngOnInit(){
